@@ -1,28 +1,28 @@
-package title
+package description
 
 import (
 	"bytes"
 	"text/template"
 )
 
-type TitleBlock struct {
+type DescriptionBlock struct {
 	template *template.Template
 }
 
-type TitleBlockInput struct {
-	ProjectTitle string
+type DescriptionBlockInput struct {
+	ProjectDescription string
 }
 
-func NewTitleBlock(templatePath string) (*TitleBlock, error) {
+func NewDescriptionBlock(templatePath string) (*DescriptionBlock, error) {
 	tmpl, err := template.ParseFiles(templatePath)
 	if err != nil {
 		return nil, err
 	}
-	newBlock := TitleBlock{template: tmpl}
+	newBlock := DescriptionBlock{template: tmpl}
 	return &newBlock, nil
 }
 
-func (block *TitleBlock) Render(data interface{}) (string, error) {
+func (block *DescriptionBlock) Render(data interface{}) (string, error) {
 	var buffer bytes.Buffer
 	err := block.template.Execute(&buffer, data)
 	if err != nil {
