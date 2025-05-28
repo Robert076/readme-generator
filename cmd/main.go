@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	titleBlock, err := title.NewTitleBlock("../internal/blocks/title/title.tmpl")
+	titleBlock, err := title.NewTitleBlock("../internal/blocks/title/title1.tmpl")
 
 	if err != nil {
 		log.Fatal("Failed loading template:", err)
