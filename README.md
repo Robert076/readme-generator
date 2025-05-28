@@ -1,7 +1,10 @@
-# readme-generator 
-README file generators for writing your documentation in a faster way.
+# 🌎 readme-generator 
+
+README file generator for writing your documentation in a faster way.
+
 
 > ❗️ This project is still in a beta version and currently doesn't have many functionalities.
+
 
 ### 🚀 Using the project: (locally)
 1. Run the main package:
