@@ -22,7 +22,7 @@ func NewTitleBlock(templatePath string) (*TitleBlock, error) {
 	return &newBlock, nil
 }
 
-func (block *TitleBlock) Render(data interface{}) (string, error) {
+func (block *TitleBlock) Render(data TitleBlockInput) (string, error) {
 	var buffer bytes.Buffer
 	err := block.template.Execute(&buffer, data)
 	if err != nil {

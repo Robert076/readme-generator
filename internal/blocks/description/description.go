@@ -22,7 +22,7 @@ func NewDescriptionBlock(templatePath string) (*DescriptionBlock, error) {
 	return &newBlock, nil
 }
 
-func (block *DescriptionBlock) Render(data interface{}) (string, error) {
+func (block *DescriptionBlock) Render(data DescriptionBlockInput) (string, error) {
 	var buffer bytes.Buffer
 	err := block.template.Execute(&buffer, data)
 	if err != nil {
