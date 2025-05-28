@@ -9,6 +9,6 @@ README file generators for writing your documentation in a faster way.
 go run cmd/main.go
 ```
 
-2. (Postman) Make a GET request to [localhost:8080/readme](localhost:8080/readme) 
+2. **(Postman)** Make a GET request to [localhost:8080/readme](localhost:8080/readme) 
 
-3. (Postman) Make a POST request to [localhost:8080/readme](localhost:8080/readme) with a body just like the one you received from the GET.
+3. **(Postman)** Make a POST request to [localhost:8080/readme](localhost:8080/readme) with a body just like the one you received from the GET.
